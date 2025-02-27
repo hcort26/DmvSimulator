@@ -9,7 +9,7 @@ public class DmvSimulator {
     Scanner scanner = new Scanner(System.in);
     Random random = new Random();
 
-    int userNumber = random.nextInt(100) + 1;
+    int userNumber = random.nextInt(200) + 1;
     System.out.println("Your number is: " + userNumber + ". Please wait until your number is called.");
 
     int currentNumber = userNumber % 100 + 1; // Starts after user's number
