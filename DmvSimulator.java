@@ -20,7 +20,14 @@ public class DmvSimulator {
         }
 
     System.out.println("Now serving: " + userNumber);
-    System.out.println("Unfortunately, you don’t have the required paperwork. Please come back with the proper documents. HAHAHAHAHAA!");
+    
+    // 99% chance of forgetting paperwork, 1% chance of being all set
+    if (random.nextInt(100) < 99) {
+        System.out.println("Unfortunately, you don’t have the required paperwork. Please come back with the proper documents. HAHAHAHAHAA!");
+    } else {
+        System.out.println("Miraculously, you have all the required paperwork!!! You are all set.");
+    }
+    
 
     }
 }
